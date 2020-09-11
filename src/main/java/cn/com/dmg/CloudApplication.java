@@ -1,4 +1,4 @@
-package cn.com.dmg.cloud;
+package cn.com.dmg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
