@@ -9,49 +9,61 @@
     <name>cloud</name>
     <description>Demo project for Spring Boot</description>
 
-    <!--打包成jar-->
-    <packaging>jar</packaging>
+    <modules>
+        <module>cloud-provider-payment8001</module>
+    </modules>
+
+    <!--
+        packing的默认值为jar
+        父工程的packing是pom
+            pom的意思是使用maven的分模块管理，一般pom中配置这个，表示pom项目里面没有java代码
+            只是为了聚合工程或传递依赖使用的
+            一般来说父工程的packing都是pom
+            例如：当设置为pom的时候，application.yml中配置的端口号也不会生效
+    -->
+    <packaging>pom</packaging>
 
 
-
-    <!--spring boot使用2.2.2Release-->
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-
-    <!--java使用1.8 springCloud使用Hoxton.SR1  springCloud-Alibaba使用2.2.1RELEASE-->
+    <!--统一管理各种jar包的版本-->
     <properties>
-        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
+        <junit.version>4.12</junit.version>
+        <lombok.version>1.18.10</lombok.version>
+        <log4j.version>1.2.17</log4j.version>
+        <mysql.version>5.1.47</mysql.version>
+        <druid.version>1.1.16</druid.version>
+        <mybatis.spring.boot.version>2.1.1</mybatis.spring.boot.version>
+        <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
     </properties>
 
-    <dependencies>
-        <!--spring boot web-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+    <!--
+        一般用在父模块
+        子模块继承之后：锁定版本+子模块不用写groupid和version
 
-        <!--spring boot普通-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-    </dependencies>
+        dependencyManagement和dependencies的区别：
+            dependencyManagement：元素能让所有在子项目中引用一个依赖而不用显示的列出版本号
+                                  因为maven会沿着父子层次向上走，直到找到一个拥有dependencyManagement元素的项目
+                                  然后他就会使用这个dependencyManagement元素中指定的版本号
 
+                                  它只是声明依赖，并不实际引入jar包，需要在子类中显示的引用
+                                  子项目中写了该依赖项，并且没有指定版本号，才会从父项目中继承，
+                                  若子项目指定版本号，则根据子项目的单独引用
+             dependencies：实际进行引用
+    -->
     <dependencyManagement>
         <dependencies>
+            <!--spring boot 2.2.2.RELEASE-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--集成spring cloud-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -60,7 +72,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
             <!--集成spring cloud alibaba-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -69,16 +80,37 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--mysql-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <!-- druid-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.spring.boot.version}</version>
+            </dependency>
+            <!--junit-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <!--log4j-->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
