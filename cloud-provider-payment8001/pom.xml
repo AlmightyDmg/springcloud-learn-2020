@@ -10,9 +10,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-provider-payment8001</artifactId>
+    <description>支付接口生产者8001端口</description>
 
 
     <dependencies>
+        <!--引入自己定义发布的jar包  自己定义的jar通过maven的clean和install指令进行发布到本地仓库-->
+        <dependency>
+            <groupId>cn.com.dmg</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--spring web和actuator一般都是绑定出现的-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

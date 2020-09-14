@@ -11,6 +11,8 @@
 
     <modules>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-consumer-order80</module>
+        <module>cloud-api-commons</module>
     </modules>
 
     <!--
@@ -125,6 +127,7 @@
                     <fork>true</fork>
                     <addResources>true</addResources>
                 </configuration>
+                <version>2.2.2.RELEASE</version>
             </plugin>
         </plugins>
     </build>
