@@ -7,12 +7,13 @@
     <artifactId>springcloud-learn-2020</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cloud</name>
-    <description>Demo project for Spring Boot</description>
+    <description>SpringCloud H版 + Alibaba</description>
 
     <modules>
         <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order80</module>
         <module>cloud-api-commons</module>
+        <module>cloud-eureka-server7001</module>
     </modules>
 
     <!--

@@ -4,3 +4,13 @@
 - spring boot 2.2.2RELEASE
 - spring cloud Hoxton.SR1
 - spring cloud Alibaba 2.2.1.RELEASE
+- lombok
+- spring cloud eureka-service
+
+
+## 各项目简介
+- springcloud-learn-2020 父项目
+- cloud-api-commons 公用项目
+- cloud-provider-payment8001 支付模块生产者
+- cloud-consumer-order80 支付模块消费者
+- cloud-eureka-server7001 Eureka单机服务
