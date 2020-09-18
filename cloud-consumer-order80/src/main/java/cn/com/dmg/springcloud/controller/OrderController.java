@@ -14,7 +14,9 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL="HTTP://127.0.0.1:8001";
+    //public static final String PAYMENT_URL="HTTP://127.0.0.1:8001";
+    //集群形式，访问服务名称
+    public static final String PAYMENT_URL="HTTP://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
