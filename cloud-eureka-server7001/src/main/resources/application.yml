@@ -12,3 +12,6 @@ eureka:
       defaultZone: http://eureka7002.com:7002/eureka/
       #这个和Eureka client配置文件中的是一样的，相当于是注册到7002服务上
       #这里是集群的时候 要找到7002的地址    设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+  server:
+    enable-self-preservation: false #是否进行自我保护
+    eviction-interval-timer-in-ms: 2000 #心跳响应时间改为2秒
