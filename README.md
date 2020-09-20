@@ -17,3 +17,5 @@
 - cloud-eureka-server7001 Eureka单机服务
 - cloud-eureka-server7002 与7001组成Eureka service集群
 - cloud-provider-payment8002 支付生产者8002与8001组成集群
+- cloud-provider-payment8004 注册进zookeeper的provider
+- cloud-consumerzk-order80 注册进zookeeper的consumer
