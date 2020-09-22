@@ -7,6 +7,7 @@
 - lombok
 - spring cloud eureka-service
 - spring cloud eureka-client
+- zookeeper 3.6.2
 
 
 ## 各项目简介
@@ -19,3 +20,5 @@
 - cloud-provider-payment8002 支付生产者8002与8001组成集群
 - cloud-provider-payment8004 注册进zookeeper的provider
 - cloud-consumerzk-order80 注册进zookeeper的consumer
+- cloud-providerconsul-payment8006 注册进Consul的provider
+- cloud-consumerconsul-order80 注册进Consul的consumer
