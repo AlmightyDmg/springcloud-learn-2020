@@ -22,3 +22,4 @@
 - cloud-consumerzk-order80 注册进zookeeper的consumer
 - cloud-providerconsul-payment8006 注册进Consul的provider
 - cloud-consumerconsul-order80 注册进Consul的consumer
+- cloud-consumer-feign-order80 使用OpenFeign进行服务调用

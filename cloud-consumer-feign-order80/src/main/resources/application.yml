@@ -1,0 +1,22 @@
+server:
+  port: 80        #因为用户用的时候一般不会关心端口号
+spring:
+  application:
+    name: cloud-order-service #服务名称 在使用服务注册的时候使用
+
+eureka:
+  client:
+    register-with-eureka: false  #不注册到Eureka
+    fetchRegistry: true
+    service-url:
+      #defaultZone: http://localhost:7001/eureka   #Eureka服务的地址
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka   #Eureka服务的地址
+ribbon:
+  #指的是建立连接后从服务器读取到可用资源所用的时间
+  ReadTimeout:  5000
+  #指的是简历链接所用的时间，适用于网络状况正常的情况下，两端链接所用的时间
+  ConnectTimeout: 5000
+
+logging:
+  level:
+    cn.com.dmg.springcloud.service.PaymentFeignService: debug
