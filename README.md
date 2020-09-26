@@ -8,6 +8,9 @@
 - spring cloud eureka-service
 - spring cloud eureka-client
 - zookeeper 3.6.2
+- consul
+- Ribbon
+- OpenFeign
 
 
 ## 各项目简介
