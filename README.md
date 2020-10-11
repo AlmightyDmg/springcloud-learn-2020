@@ -29,3 +29,5 @@
 - cloud-consumer-feign-order80 使用OpenFeign进行服务调用
 - cloud-provider-hystrix-payment8001 使用Hystrix的provider
 - cloud-consumer-feign-hystrix-order80 使用Hystrix的consumer
+- cloud-consumer-hystrix-dashboard9001 使用Hystrix的Dashboard监控功能
+- cloud-gateway-gateway9527 集成使用GetWay网关
