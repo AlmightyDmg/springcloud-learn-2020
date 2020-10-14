@@ -12,6 +12,7 @@
 - Ribbon
 - OpenFeign
 - Hystrix
+- GetWay
 
 
 ## 各项目简介
