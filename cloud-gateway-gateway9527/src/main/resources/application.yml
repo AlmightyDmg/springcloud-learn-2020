@@ -18,9 +18,9 @@ spring:
         uri: lb://CLOUD-PAYMENT-SERVICE   #根据微服务名称进行负载均衡的地址
         predicates:
         - Path=/payment/lb/**   #断言,路径相匹配的进行路由
-        - After=2020-10-14T20:20:11.715+08:00[Asia/Shanghai] #在该时间之后，访问lb才有效果
-        - Cookie=username,zzyy
-        - Header=X-Request-Id,\d+ #请求头要有X-Request-Id属性，并且值为正整数
+        #- After=2020-10-14T20:20:11.715+08:00[Asia/Shanghai] #在该时间之后，访问lb才有效果
+        #- Cookie=username,zzyy
+        #- Header=X-Request-Id,\d+ #请求头要有X-Request-Id属性，并且值为正整数
       discovery:
         locator:
           enabled: true  #开启从注册中心动态创建路由的功能，利用微服务名进行路由
