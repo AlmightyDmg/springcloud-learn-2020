@@ -13,6 +13,7 @@
 - OpenFeign
 - Hystrix
 - GateWay
+- SpringCloud Config
 
 
 ## 各项目简介
@@ -31,4 +32,6 @@
 - cloud-provider-hystrix-payment8001 使用Hystrix的provider
 - cloud-consumer-feign-hystrix-order80 使用Hystrix的consumer
 - cloud-consumer-hystrix-dashboard9001 使用Hystrix的Dashboard监控功能
-- cloud-gateway-gateway9527 集成使用GetWay网关
+- cloud-gateway-gateway9527 集成使用GateWay网关
+- cloud-config-center-3344 使用springcloud-config服务端
+- cloud-config-client-3355 使用springcloud-config客户端

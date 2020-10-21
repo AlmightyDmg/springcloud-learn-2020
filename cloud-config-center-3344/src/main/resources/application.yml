@@ -1,0 +1,19 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/dmg0020/springcloud-config-dmg-2020.git  #GitHub上的git仓库名字
+          search-paths: springcloud-config-dmg-2020  #搜索目录
+        label: master #读取分支
+eureka:
+  client:
+    register-with-eureka: true  #注册到Eureka
+    fetchRegistry: true
+    service-url:
+      #defaultZone: http://localhost:7001/eureka   #Eureka服务的地址
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka   #Eureka服务的地址
