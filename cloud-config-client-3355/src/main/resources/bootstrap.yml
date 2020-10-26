@@ -12,6 +12,12 @@ spring:
         #结合以上三个信息，最后读取到的文件为：master分支上的confug-dev.yml
         #即：http://localhost:3344/master/config-dev.yml
         uri: http://localhost:3344  #配置中心地址
+    #rabbitmq相关配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     register-with-eureka: true  #注册到Eureka
