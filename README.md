@@ -15,6 +15,7 @@
 - GateWay
 - SpringCloud Config
 - SpringCloud Bus
+- SpringCloud Stream
 
 
 ## 各项目简介
@@ -37,3 +38,4 @@
 - cloud-config-center-3344 使用springcloud-config服务端
 - cloud-config-client-3355 使用springcloud-config客户端
 - cloud-config-client-3366 使用springcloud-config客户端配合测试Bus
+- cloud-stream-rabbitmq-provider8801 消息驱动生产者
