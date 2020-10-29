@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: cloud-payment-service #服务名称 在使用服务注册的时候使用
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1  #采样率值介于0-1之间，1表示全部采集
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver

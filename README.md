@@ -16,6 +16,7 @@
 - SpringCloud Config
 - SpringCloud Bus
 - SpringCloud Stream
+- SpringCloud Sleuth
 
 
 ## 各项目简介
