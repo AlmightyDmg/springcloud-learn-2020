@@ -17,6 +17,7 @@
 - SpringCloud Bus
 - SpringCloud Stream
 - SpringCloud Sleuth
+- SpringCloud Alibaba Nacos
 
 
 ## 各项目简介
@@ -42,3 +43,7 @@
 - cloud-stream-rabbitmq-provider8801 消息驱动stream生产者
 - cloud-stream-rabbitmq-consumer8802 消息驱动stream消费者8802
 - cloud-stream-rabbitmq-consumer8803 消息驱动stream消费者8803
+- cloudalibaba-provider-payment9001 springcloud alibaba nacos 服务提供者9001
+- cloudalibaba-provider-payment9002 springcloud alibaba nacos 服务提供者9002
+- cloudalibaba-consumer-nacos-order83 springcloud alibaba nacos 服务消费者83
+- cloudalibaba-config-nacos-client3377 springcloud alibaba nacos 配置中心
