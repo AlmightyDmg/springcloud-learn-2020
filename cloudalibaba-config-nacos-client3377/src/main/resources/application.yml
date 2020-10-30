@@ -1,3 +1,5 @@
 spring:
   profiles:
+    #active: dev   #与bootstrap相结合，就是去 8848上找dev的yml文件
+    #active: test
     active: dev

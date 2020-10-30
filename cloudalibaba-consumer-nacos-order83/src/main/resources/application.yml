@@ -7,5 +7,5 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-        service-url:
-          nacos-user-service: http://nacos-payment-provider
+service-url:
+   nacos-user-service: http://nacos-payment-provider
