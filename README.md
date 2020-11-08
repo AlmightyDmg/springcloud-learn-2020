@@ -47,3 +47,7 @@
 - cloudalibaba-provider-payment9002 springcloud alibaba nacos 服务提供者9002
 - cloudalibaba-consumer-nacos-order83 springcloud alibaba nacos 服务消费者83
 - cloudalibaba-config-nacos-client3377 springcloud alibaba nacos 配置中心
+- cloudalibaba-sentinel-service8401 springcloud alibaba sentinel
+- cloudalibaba-provider-payment9003 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
+- cloudalibaba-provider-payment9004 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
+- cloudalibaba-consumer-nacos-order84 springcloud alibaba sentinel 整合Ribbon和OpenFeign消费者
