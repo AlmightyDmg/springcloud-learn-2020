@@ -18,6 +18,8 @@
 - SpringCloud Stream
 - SpringCloud Sleuth
 - SpringCloud Alibaba Nacos
+- SpringCloud Alibaba Sentinel
+- SpringCloud Alibaba Seata
 
 
 ## 各项目简介
@@ -51,3 +53,4 @@
 - cloudalibaba-provider-payment9003 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
 - cloudalibaba-provider-payment9004 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
 - cloudalibaba-consumer-nacos-order84 springcloud alibaba sentinel 整合Ribbon和OpenFeign消费者
+- seata-order-service2001 springcloud alibaba 整合使用seata之Order模块
