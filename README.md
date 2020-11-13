@@ -1,13 +1,12 @@
 # springcloud-learn-2020
 ## 技术选型
 - java8
+- lombok
 - spring boot 2.2.2RELEASE
 - spring cloud Hoxton.SR1
 - spring cloud Alibaba 2.2.1.RELEASE
-- lombok
-- spring cloud eureka-service
-- spring cloud eureka-client
-- zookeeper 3.6.2
+- spring cloud eureka
+- zookeeper
 - consul
 - Ribbon
 - OpenFeign
@@ -53,4 +52,6 @@
 - cloudalibaba-provider-payment9003 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
 - cloudalibaba-provider-payment9004 springcloud alibaba sentinel 整合Ribbon和OpenFeign生产者
 - cloudalibaba-consumer-nacos-order84 springcloud alibaba sentinel 整合Ribbon和OpenFeign消费者
-- seata-order-service2001 springcloud alibaba 整合使用seata之Order模块
+- seata-order-service2001 springcloud alibaba 整合使用seata之Order模块订单端
+- seata-order-service2002 springcloud alibaba 整合使用seata之Order模块库存端
+- seata-order-service2003 springcloud alibaba 整合使用seata之Order模块账户端
