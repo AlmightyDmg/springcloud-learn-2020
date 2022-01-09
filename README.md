@@ -19,7 +19,7 @@
 
 整个资料包，包括 Spring、Spring Boot/Cloud、Dubbo、JVM、集合、多线程、JPA、MyBatis、MySQL、大数据、Nginx、Git、Docker、GitHub、Servlet、JavaWeb、IDEA、Redis、算法、面试题等几乎覆盖了 Java 基础和阿里巴巴等大厂面试题等、等技术栈！
 
-搜索微信公众号【乔治学java】或扫描下方二维码，关注公主号，回复关键字【666】，获得面试资料
+搜索微信公众号【乔治学java】或扫描下方二维码，关注公众号，回复关键字【666】，获得面试资料
 ![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109181242.png)
 
 ## 技术选型
