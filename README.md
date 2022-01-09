@@ -13,6 +13,15 @@
 获取完整的 Java 学习路线，请搜索或扫描下方我二维码关注公众号【开源小分队】回复关键字【dddd104】
 
 ![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109180100.png)
+
+## Java 面试学习资料
+最近又赶上跳槽的高峰期（招聘旺季），找阿里朋友整理一份内部资料《第6版：互联网大厂面试题》并分类 4 份 PDF，累计 926 页！
+
+整个资料包，包括 Spring、Spring Boot/Cloud、Dubbo、JVM、集合、多线程、JPA、MyBatis、MySQL、大数据、Nginx、Git、Docker、GitHub、Servlet、JavaWeb、IDEA、Redis、算法、面试题等几乎覆盖了 Java 基础和阿里巴巴等大厂面试题等、等技术栈！
+
+搜索微信公众号【乔治学java】或扫描下方二维码，关注公主号，回复关键字【666】，获得面试资料
+![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109181242.png)
+
 ## 技术选型
 - java8
 - lombok
