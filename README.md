@@ -2,17 +2,17 @@
 
 ## 学习脑图
 ![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109174309.png)
-获取完整的学习脑图，请搜索或扫描下方我二维码关注公众号【开源小分队】回复关键字【dddd108】
+获取完整的学习脑图，请搜索或扫描下方我二维码关注公众号【乔治学java】回复关键字【dddd108】
 
-![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109180100.png)
+![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/乔治学java.jpg)
 
 ## Java 学习路线
 另外给大家推荐一个一站式Java学习路线，从入门到大神再到封神的各个阶段全都包括了：
 ![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109180613.png)
 
-获取完整的 Java 学习路线，请搜索或扫描下方我二维码关注公众号【开源小分队】回复关键字【dddd104】
+获取完整的 Java 学习路线，请搜索或扫描下方我二维码关注公众号【乔治学java】回复关键字【dddd104】
 
-![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/20220109180100.png)
+![](https://gitee.com/dmg0020/draw-bed/raw/master/imgs/乔治学java.jpg)
 
 ## Java 面试学习资料
 最近又赶上跳槽的高峰期（招聘旺季），找阿里朋友整理一份内部资料《第6版：互联网大厂面试题》并分类 4 份 PDF，累计 926 页！
